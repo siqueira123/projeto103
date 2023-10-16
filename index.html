@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indentifcador facial</title>
+</head>
+<body>
+   <center>
+     <h3 class="btn btn-default heading">INDENTIFICADOR DE ROSTOS</h3>
+     <br><br>
+
+     <p style="font-size: 22px;"> o modelo foi treinado para identificar as seguintes pessoas:</p>
+     
+     <b class="nomes">
+        Pai
+        <hr>
+        Mãe
+        <hr>
+        Irmão
+        <hr>
+        Irmã
+        <hr>
+     </b>
+
+     <label>Visualição da webcam - </label>
+     <div id="camera"></div>
+     <br><br>
+     <div id="result"></div>
+     <br><br>
+     <button onclick="takeSnapshot();" class="btn btn-info">Capturar Imagens</button>
+     <br><br>
+     <button onclick="check();" class="btn btn-success" > Indentificar imagem</button>
+     <br><br>
+
+     <p style="font-size: 22px;">Pessoa : <span id="resultObjectName"></span></p>
+     <p style="font-size: 22px;">Precisao : <span id="resultObjectAccuracy"></span></p>
+   </center> 
+</body>
+</html>
